@@ -11,7 +11,8 @@
         android:layout_height="fill_parent"
         android:layout_centerHorizontal="true"
         android:layout_alignParentTop="true"
-        android:id="@+id/label_nome">
+        android:id="@+id/label_nome"
+        android:weightSum="1">
 
         <TextView
             android:layout_width="wrap_content"
@@ -28,6 +29,70 @@
             style="@style/AppTheme"
             android:editable="true"
             android:enabled="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Placa"
+            android:id="@+id/textView2" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/placa" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Marca"
+            android:id="@+id/textView3" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/marca" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Combustivel"
+            android:id="@+id/textView4" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:id="@+id/combustivelLayout"
+            android:layout_gravity="center_horizontal|top">
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="0.75"
+                android:id="@+id/radioGroupCombustivel">
+
+                <RadioButton
+                    android:layout_width="146dp"
+                    android:layout_height="wrap_content"
+                    android:text="Gasolina"
+                    android:id="@+id/gasolina"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="alcool"
+                    android:id="@+id/alcool"
+                    android:checked="false" />
+
+            </RadioGroup>
+
+        </LinearLayout>
 
         <Button
             android:layout_width="104dp"
