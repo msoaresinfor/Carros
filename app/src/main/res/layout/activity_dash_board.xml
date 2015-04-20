@@ -17,6 +17,6 @@
         android:layout_marginTop="80dp"
         android:drawableTop="@drawable/cad_carro"
         android:textStyle="bold"
-        android:clickable="false"
+        android:clickable="true"
         android:onClick="selecionarOpcao" />
 </RelativeLayout>
