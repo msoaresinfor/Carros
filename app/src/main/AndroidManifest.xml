@@ -10,6 +10,14 @@
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".ReportActivity"
+            android:label="@string/title_activity_report" >
+        </activity>
+        <activity
+            android:name=".Login"
+            android:label="@string/title_activity_login" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -17,8 +25,12 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ReportActivity"
-            android:label="@string/title_activity_report" >
+            android:name=".DashBoard"
+            android:label="@string/title_activity_dash_board"
+            android:parentActivityName=".Login" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="mbs.carros.Login" />
         </activity>
     </application>
 
